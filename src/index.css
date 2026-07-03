@@ -1,0 +1,377 @@
+* {
+  top : 0;
+  left : 0;
+  margin : 0;
+  padding : 0;
+  box-sizing : border-box;
+  background : var(--bg);
+  font-size : 16px;
+  scroll-behavior : smooth;
+  font-family :'poppins', sans-serif;
+}
+
+:root {
+  --bg : #01010d;
+  --black : #000;
+  --white : #fff;
+  --peach : #ff4c60;
+  --lightgreen : #00ffb9;
+  --lightblue : #b6edfc;
+  --blue : #005bea;
+  --magenta : #a20e71;
+  --darkblue : #001f54;
+  --instragram-bg:  linear-gradient(90deg,rgba(249, 206, 52, 1) 0%, rgba(238, 42, 123, 1) 50%, rgba(98, 40, 215, 1) 100%);
+}
+
+body{
+  
+  background : var(--bg);
+  color : var(--white);
+}
+
+.navbar{
+  width : 100%;
+  height : 80px;
+  display : flex;
+  align-items : center;
+  justify-content : space-between;
+  padding : 0px 100px;
+  font-size : 18px;
+  color : var(--white);
+  position : sticky;
+  top : 0;
+}
+
+/* logo */
+.logo{
+  color : var(--lightgreen);
+  font-size : 24px;
+  font-weight : 600;
+  display : flex;
+  gap : 10px;
+}
+
+
+
+ul {
+  display : flex;
+  align-items : center;
+  list-style : none;
+  gap : 40px;
+
+  li{
+    a{
+      text-decoration : none;
+      color : var(--white);
+      font-size : 18px;
+      font-weight : 500;
+      transition : all 0.3s ease;
+       -moz-transition: all 0.2s ease;
+       -o-transition: all 0.2s ease;
+      &:hover{
+        color : var(--lightgreen);
+        text-decoration : underline var(--peach) solid;
+      }
+
+     
+    }
+  }
+}
+
+/* section class  */
+section{
+  width : 100%;
+  height : 100vh;
+  display : flex;
+  align-items : center;
+  justify-content : center;
+}
+
+/* navlist */
+.navlist{
+  display : flex;
+  align-items : center;
+  list-style : none;
+  gap : 40px;
+}
+
+
+/* intoduction section */
+.intro {
+  padding : 80px 100px;
+  height : 100vh;
+  color : var(--white);
+  justify-content : center;
+  margin : 0 auto;
+  border-radius : 10px;
+  justify-content : space-between;
+  display : flex;
+
+  .intro-content{
+    max-width : 800px;
+    display : flex;
+    flex-direction : column;
+    gap : 20px;
+    align-items : flex-start;
+    /* justify-content : center; */
+    /* text-align : left; */
+
+    .intro-title{
+      font-size :48px;
+      font-weight : 700;
+      color : var(--white);
+    }
+
+    .intro-subtitle{
+      font-size : 24px;
+      color : var(--lightblue);
+    }
+  }
+}
+
+
+.section-title{
+  font-size : 36px;
+  font-weight : 700;
+  color : var(--white);
+  margin-bottom : 20px;
+}
+
+
+.profile-image{
+  background : var(--peach);
+  width : 400px;
+  height : 400px;
+  border-radius : 50%;
+  object-fit : cover;
+  border : 5px solid var(--lightgreen);
+}
+
+ .contact, .about, .education, .experience, .skills{
+  padding : 80px 100px;
+  height : 100vh;
+  color : var(--white);
+  justify-content : center;
+  margin : 0 auto;
+  border-radius : 10px;
+}
+
+
+.highlight{
+  color : var(--lightgreen);
+  font-size : 30px;
+}
+
+/* download resume button */
+.download-btn{
+  padding : 10px 20px;
+  background : var(--lightgreen);
+  color : var(--bg);
+  border : none;
+  border-radius : 5px;
+  font-size : 18px;
+  font-weight : bold;
+  cursor : pointer;
+  transition : all 0.3s ease;
+  display : flex;
+  gap : 10px;
+  align-items : center;
+  text-align : center;
+  &:hover{
+    background : var(--peach);
+  }
+}
+
+/* contact button list */
+.contact-btn{
+  display : flex;
+  gap : 20px;
+}
+
+
+.github-btn{
+  padding : 10px 10px;
+  background : var(--black);
+  color : var(--white);
+  border : 2px solid var(--lightgreen);
+  border-radius : 50px;
+  font-size : 10px;
+  cursor : pointer;
+  transition : all 0.3s ease;
+
+  &:hover{
+  background : var(--white);
+  border-color: var(--white);
+  transform: translateY(-3px);
+  color : var(--black);
+  }
+}
+
+
+
+.facebook-btn , .linkedin-btn {
+  padding : 10px 10px;
+  background : var(--black);
+  color : var(--white);
+  border : 2px solid var(--lightgreen);
+  border-radius : 50px;
+  font-size : 10px;
+  cursor : pointer;
+  transition : all 0.3s ease;
+
+  &:hover{
+  background : var(--blue);
+  border-color: var(--blue);
+  transform: translateY(-3px);
+  }
+}
+
+
+.instagram-btn{
+  padding : 10px 10px;
+  background : var(--black);
+  color : var(--white);
+  border : 2px solid var(--lightgreen);
+  border-radius : 50px;
+  font-size : 10px;
+  cursor : pointer;
+  transition : all 0.3s ease;
+
+  &:hover{
+  background : var(--instragram-bg);
+  border-color: var(--magenta);
+  transform: translateY(-3px);
+  }
+}
+
+.phone-btn {
+  padding: 10px 10px;
+  background: var(--black);
+  color: var(--white);
+  border: 2px solid var(--lightgreen);
+  border-radius: 50px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  width: 160px;
+  cursor: default;
+}
+
+
+/* ------ experience section ------*/
+.experience{
+  padding : 80px 100px;
+  display :flex;
+  gap : 20px;
+  height : 100vh;
+  color : var(--white);
+  justify-content : center;
+  margin : 0 auto;
+  border-radius : 10px;
+  flex-direction : column;
+  /* background : var(--darkblue); */
+}
+
+.experience-title{
+  font-size : 36px;
+  font-weight : 700;
+  color : var(--lightgreen);
+  margin-bottom : 20px;
+  flex-direction : row;
+}
+
+.experience-description{
+  font-size : 18px;
+  color : var(--white);
+  flex-direction : row;
+}
+
+.experience-content{
+  width : 100%;
+  height : 100%;
+  display : flex;
+  align-items : center;
+  justify-content : center;
+  gap : 20px;
+}
+
+.experience-subtitle{
+  font-size : 24px;
+  font-weight : 600;
+  color : var(--lightblue);
+  margin-bottom : 10px;
+  
+}
+
+.carousel-ctn{
+  width : 100%;
+  height : 100%;
+  display : flex;
+  align-items : center;
+  justify-content : center;
+}
+
+
+.carousel-item{
+  width : 400px;
+  height : 400px;
+  display : flex;
+  align-items : center;
+  justify-content : center;
+  border-radius : 10px;
+  border : 2px solid var(--lightgreen);
+  overflow : hidden;
+}
+
+experience-img{
+  width : 100%;
+  height : 100%;
+  object-fit : cover;
+}
+
+
+.left-btn, .right-btn{
+  position : absolute;
+  top : 50%;
+  transform : translateY(-50%);
+  font-size : 30px;
+  color : var(--white);
+  cursor : pointer;
+  z-index : 10;
+}
+
+
+/* ----- animation typewriter -------*/
+.typewriter-container {
+  display: inline-block;
+  color: var(--lightgreen);
+  font-size: 24px;
+  margin-top: 20px;
+}
+
+.typewriter-text {
+  font-family: monospace;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid #333; /* The cursor */
+  width: 0;
+  animation: 
+    typing 3.5s steps(30, end) forwards,
+    blink 0.75s step-end infinite;
+}
+
+/* Animates the width from 0 to full text size */
+@keyframes typing {
+  from { width: 0; }
+  to { width: 100%; }
+}
+
+/* Animates the cursor visibility */
+@keyframes blink {
+  from, to { border-color: transparent; }
+  50% { border-color: #333; }
+}
