@@ -2,6 +2,13 @@ import ProfileImg from "./assets/images/Profile.jpg";
 import Notebook from "./assets/images/Notebook.png";
 import GithubIcon from "./assets/images/github.png";
 import LinkedinIcon from "./assets/images/linkedin.png";
+import Sabaitour from "./assets/images/Sabaitour-logo.png";
+import Toypaplean from "./assets/images/ToyPaplean-logo.png";
+import Tohwangsoi from "./assets/images/Tohwangsoi-logo.png";
+import Left from "./assets/images/left.png";
+import Right from "./assets/images/right.png";
+import kulogo from "./assets/images/KU.png";
+
 
 import './App.css'
 
@@ -128,6 +135,7 @@ function App() {
             {" "}
             Web developer.
             <img src={Notebook} alt="Notebook" className="notebook-img" />
+            / Frontend developer
           </p>
 
           <h1>
@@ -180,7 +188,7 @@ function App() {
       {/*----- About me section -----*/}
       <section className="about" id="about">
         <h2 className="section-title">About Me</h2>
-        &nbsp; {/* &nbsp is used to space the words in line*/}
+    
         <h2 className="section-title" >Know More About Me </h2>
         <p className="section-description">
            I'm a Passionate Web Developer for creating beautiful and
@@ -192,19 +200,20 @@ function App() {
       {/*----- Education section -----*/}
       <section className="education" id="education">
         <h2 className="section-title">Education</h2>
-        &nbsp;
         <div className="Kasetsart-profile">
           <img
-            src="./assets/images/Kasetsart.png"
+            src= {kulogo}
             alt="Kasetsart University"
-            className="Kasetsart-img"
+            className="ku-logo"
           />
         </div>
+        
         <p className="section-description">
           I have a degree in Computer Science from the University of Technology.
-          graduated in 2026 from Kasetsart University with a Bachelor's degree
+          graduated in 2026 from Kasetsart University sriracha campus with a Bachelor's degree
           in Information Technology.
         </p>
+        <p>GPAX 3.49 Second Class Honors</p>
       </section>
 
       {/* ----- Skills section ----- */}
@@ -228,38 +237,50 @@ function App() {
 
         {/*-------  Carrousel for experience images  -------*/}
         <div className="carousel-ctn">
+
+          {/* left button */}
           <div className="left-btn"> 
-            <img>
-            </img>
+            <img 
+             src={Left}
+             className= "nextprev-img"
+            />
            </div>
 
-          <div className="carousel-item">
+          <div className="carousel-item" id = "project-1">
             <img
-              src="./assets/images/experience1.png"
+              src={Sabaitour}
               alt="Experience 1"
-              className="experience-img"
+              className="projectlogo"
             />
-            <h3 className="experience-subtitle">Web Development Experience</h3>
+            {/* <h3 className="experience-subtitle">Web Development Experience</h3> */}
             <p></p>
           </div>
 
-          <div className="carousel-item">
+          <div className="carousel-item" id = "project-2">
             <img
-              src="./assets/images/experience2.png"
+              src={Toypaplean}
               alt="Experience 2"
-              className="experience-img"
+               className="projectlogo"
             />
           </div>
 
-          <div className="carousel-item">
+          <div className="carousel-item" id = "project-3">
             <img
-              src="./assets/images/experience3.png"
+              src={Tohwangsoi}
               alt="Experience 3"
-              className="experience-img"
+                className="projectlogo"
             />
           </div>
         </div>
-        <div className="right-btn"></div>
+
+        {/* right-button */}
+        <div className="right-btn">
+             <img 
+             src={Right}
+             className= "nextprev-img"
+            />
+        </div>
+
       </section>
 
       {/* ----- Contact section ----- */}

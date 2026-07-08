@@ -71,7 +71,7 @@ ul {
        -o-transition: all 0.2s ease;
       &:hover{
         color : var(--lightgreen);
-        text-decoration : underline var(--peach) solid;
+        /* text-decoration : underline var(--peach) solid; */
       }
 
      
@@ -150,6 +150,7 @@ section{
   border-radius : 50%;
   object-fit : cover;
   border : 5px solid var(--lightgreen);
+
 }
 
  .contact, .about, .education, .experience, .skills{
@@ -252,8 +253,8 @@ section{
   padding: 10px 10px;
   background: var(--black);
   color: var(--white);
-  border: 2px solid var(--lightgreen);
-  border-radius: 50px;
+  border : 2px solid var(--gray);
+  border-radius : 10px;
   font-size: 16px;
   font-weight: bold;
   cursor: pointer;
@@ -266,7 +267,7 @@ section{
 }
 
 /* ------ experience section ------*/
-.experience{
+.experience , .skills ,.contact , .about,.education{
   padding : 80px 100px;
   display :flex;
   gap : 20px;
@@ -287,10 +288,11 @@ section{
   flex-direction : row;
 }
 
-.experience-description{
+.experience-description, .section-description{
   font-size : 18px;
   color : var(--white);
   flex-direction : row;
+ justify-content: center;
 }
 
 .experience-content{
@@ -313,6 +315,7 @@ section{
 .carousel-ctn{
   width : 100%;
   height : 100%;
+  /* gap:20px; */
   display : flex;
   align-items : center;
   justify-content : center;
@@ -329,22 +332,35 @@ section{
   overflow : hidden;
 }
 
-experience-img{
-  width : 100%;
-  height : 100%;
-  object-fit : cover;
+
+.left-btn,.right-btn {
+  background-color: var(--black);
+  color: var(--white);
+  font-size: 12px;
+  cursor: pointer;
+  padding: 12px 12px;
+  border: 2px solid var(--gray);
+  border-radius: 50px;
+  z-index: 10;
+  transition: all 0.3s ease;
+
+  &:hover {
+    border-color: var(--white);
+    transform: translateY(-3px);
+    color: var(--black);
+  }
 }
 
-.left-btn, .right-btn{
-  position : absolute;
-  top : 50%;
-  transform : translateY(-50%);
-  font-size : 30px;
-  color : var(--white);
-  cursor : pointer;
-  z-index : 10;
+.projectlogo, .ku-logo{
+   width: 150px;
+   height: 150px;
 }
 
+.nextprev-img{
+   font-size : 10px;
+   width: 20px;
+   height: 20px;
+}
 
 /* ----- animation typewriter -------*/
 .typewriter-container {
